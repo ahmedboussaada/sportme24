@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+
+.containere {
+    
+   display: grid;
+   grid-template-columns: 1fr 2fr 1fr;
+   grid-template-rows: repeat(1fr,9);
+   height: 100vh;
+   width: 100% ;
+    grid-gap: 2px solid black ;
+    text-align: center;
+    
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav{
+  
+    
+    grid-column: 1/4;
+    grid-row: 1/2;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.quiz{
+    background-color: rgb(7, 7, 7);
+    grid-column: 1/2;
+    grid-row: 2/4;
+}
+.slideshow{
+    justify-self: center;
+
+    background-color: #ff1919;
+    grid-column: 2/3;
+    grid-row: 2/4;
+}
+.icons{
+    background-color: #0840f7;
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+.ico {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    
+}
+.pub{
+    background-color: #ff1919;
+    grid-column: 4/3;
+    grid-row: 3/6;
+}
+.tnligue{
+    background-color: #0840f7;
+    grid-column: 1/2;
+    grid-row: 4/7;
+}
+.blog{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr ;
+    grid-column: 2/3;
+    grid-row: 4/6;
+}
+.videos{
+    justify-self: center;
+    grid-column: 2/3;
+    grid-row: 6/7;
+}
+.sidebar{
+    background-color: #2a97fd ;
+    grid-column: 3/4;
+    grid-row: 6/7;
+
+}
+.footer{
+    background-color: #08c728;
+    grid-column: 1/4;
+    grid-row: 7/9;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+@media only screen and (max-width: 600px) {
+    .containerr {
+        display: grid;
+      grid-template-columns: 1fr;
+    }
+  };

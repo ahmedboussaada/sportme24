@@ -1,24 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import ControlledCarousel from "./slideshow/slideshow";
+import Navbar from "./navbar/navbar";
+// import {Row,Col} from 'react-bootstrap';
+import Icon from "./icon/icon"
+import Card from "./article/article";
+// import Signup from "./login/signup";
+// import Login from "./login/login";
+import Footer from "./footer/footer";
+import Video from "./video/video";
+import Quiz from "./quiz/quiz";
+import Articli from "./news/news";
+// import {Route} from "react-router-dom";
+import Weather from "./sidebar/sidebar";
+
+
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+
+  return ( 
+    
+
+  <div className="containere">
+      <div className="nav"><Navbar/></div>
+      <div className="quiz"><Quiz/></div>      
+      <div className="slideshow"><ControlledCarousel/></div>
+      <div className="icons"><Icon/></div>
+      <div className="tnligue"> 
+        <Articli/>
+        </div>
+      <div className="blog"><Card/></div>
+      <div className="pub">pub</div>
+      <div className="videos"><Video/></div>
+      <div className="sidebar"><Weather/> </div>
+      <div className="footer"><div className="ico"><Icon/> </div>
+      <div><Footer/></div> </div>
+  </div>
   );
 }
 
